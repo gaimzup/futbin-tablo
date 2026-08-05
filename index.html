@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA FC Kar / Zarar Listesi</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #000000; color: #ffffff; font-family: 'Segoe UI', Roboto, sans-serif; padding: 10px; }
+        .table-container { max-width: 1000px; margin: 0 auto; overflow-x: auto; border-radius: 12px; background: #0a0a0a; border: 1px solid #1a1a1a; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: #121212; color: #ffffff; padding: 14px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #222222; font-weight: 700; }
+        td { padding: 12px 16px; border-bottom: 1px solid #1a1a1a; vertical-align: middle; font-size: 14px; color: #ffffff; }
+        tr:hover { background-color: #141414; }
+        .player-cell { display: flex; align-items: center; gap: 12px; }
+        .card-badge { width: 32px; height: 32px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; flex-shrink: 0; font-family: Arial, sans-serif; }
+        .card-gold { background: linear-gradient(180deg, #e5b300 0%, #c69200 100%); color: #3d2b00; border: 1.5px solid #ffd700; }
+        .card-totw { background: linear-gradient(180deg, #2c2a29 0%, #0f0e0e 100%); color: #fdd835; border: 1.5px solid #d4af37; }
+        .card-thunder { background: linear-gradient(180deg, #1b384a 0%, #0a1724 100%); color: #00ffff; border: 1.5px solid #80d8ff; }
+        .card-icon { background: linear-gradient(180deg, #ffffff 0%, #b0bec5 100%); color: #111; border: 1.5px solid #eceff1; }
+        .card-scream { background: linear-gradient(180deg, #d32f2f 0%, #4a148c 100%); color: #fff; border: 1.5px solid #ff80ab; }
+        .card-tots { background: linear-gradient(180deg, #006064 0%, #01579b 100%); color: #80d8ff; border: 1.5px solid #00e5ff; }
+        .card-special { background: linear-gradient(180deg, #6a1b9a 0%, #283593 100%); color: #fff; border: 1.5px solid #b388ff; }
+        .player-name { font-weight: 600; color: #ffffff; }
+        .price-val, .calc-buy, .calc-sell { color: #ffffff; }
+        .profit-loss { color: #00ff66 !important; font-weight: 700; }
+    </style>
+</head>
+<body>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Oyuncu</th>
+                <th>Versiyon</th>
+                <th>Güncel Fiyatı</th>
+                <th>Alış</th>
+                <th>Satış</th>
+                <th>K/Z</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+</body>
+</html>
