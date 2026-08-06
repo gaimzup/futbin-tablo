@@ -6,23 +6,16 @@
     <title>EA FC Kar / Zarar Listesi</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #000000; color: #ffffff; font-family: 'Segoe UI', Roboto, sans-serif; padding: 10px; }
-        .table-container { max-width: 1000px; margin: 0 auto; overflow-x: auto; border-radius: 12px; background: #0a0a0a; border: 1px solid #1a1a1a; }
+        body { background-color: #000000; color: #ffffff; font-family: 'Segoe UI', Roboto, sans-serif; padding: 15px; }
+        .table-container { max-width: 1000px; margin: 0 auto; overflow-x: auto; border-radius: 12px; background: #0a0a0a; border: 1px solid #1a1a1a; box-shadow: 0 8px 24px rgba(0,0,0,0.8); }
         table { width: 100%; border-collapse: collapse; text-align: left; }
-        th { background: #121212; color: #ffffff; padding: 14px 16px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #222222; font-weight: 700; }
-        td { padding: 12px 16px; border-bottom: 1px solid #1a1a1a; vertical-align: middle; font-size: 14px; color: #ffffff; }
+        th { background: #121212; color: #888888; padding: 14px 16px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #222222; font-weight: 700; }
+        td { padding: 14px 16px; border-bottom: 1px solid #1a1a1a; vertical-align: middle; font-size: 14px; color: #ffffff; }
         tr:hover { background-color: #141414; }
         .player-cell { display: flex; align-items: center; gap: 12px; }
-        .card-badge { width: 32px; height: 32px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; flex-shrink: 0; font-family: Arial, sans-serif; }
-        .card-gold { background: linear-gradient(180deg, #e5b300 0%, #c69200 100%); color: #3d2b00; border: 1.5px solid #ffd700; }
-        .card-totw { background: linear-gradient(180deg, #2c2a29 0%, #0f0e0e 100%); color: #fdd835; border: 1.5px solid #d4af37; }
-        .card-thunder { background: linear-gradient(180deg, #1b384a 0%, #0a1724 100%); color: #00ffff; border: 1.5px solid #80d8ff; }
-        .card-icon { background: linear-gradient(180deg, #ffffff 0%, #b0bec5 100%); color: #111; border: 1.5px solid #eceff1; }
-        .card-scream { background: linear-gradient(180deg, #d32f2f 0%, #4a148c 100%); color: #fff; border: 1.5px solid #ff80ab; }
-        .card-tots { background: linear-gradient(180deg, #006064 0%, #01579b 100%); color: #80d8ff; border: 1.5px solid #00e5ff; }
-        .card-special { background: linear-gradient(180deg, #6a1b9a 0%, #283593 100%); color: #fff; border: 1.5px solid #b388ff; }
-        .player-name { font-weight: 600; color: #ffffff; }
-        .price-val, .calc-buy, .calc-sell { color: #ffffff; }
+        .card-badge { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; flex-shrink: 0; font-family: Arial, sans-serif; }
+        .player-name { font-weight: 600; color: #ffffff; font-size: 15px; }
+        .price-val, .calc-buy, .calc-sell { color: #ffffff; font-weight: 500; }
         .profit-loss { color: #00ff66 !important; font-weight: 700; }
     </style>
 </head>
@@ -39,7 +32,337 @@
                 <th>K/Z</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">90</div>
+                    <span class="player-name">Virgil van Dijk</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">6,10K</td>
+                <td class="calc-buy">5,92K</td>
+                <td class="calc-sell">7,01K</td>
+                <td class="profit-loss">+0,74K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Raphael Dias Belloli</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">6,80K</td>
+                <td class="calc-buy">6,60K</td>
+                <td class="calc-sell">7,82K</td>
+                <td class="profit-loss">+0,83K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">91</div>
+                    <span class="player-name">Kylian Mbappé</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">48,50K</td>
+                <td class="calc-buy">47,09K</td>
+                <td class="calc-sell">51,90K</td>
+                <td class="profit-loss">+2,21K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">91</div>
+                    <span class="player-name">Aitana Bonmatí Conca</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">11,00K</td>
+                <td class="calc-buy">10,68K</td>
+                <td class="calc-sell">12,65K</td>
+                <td class="profit-loss">+1,34K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Pedro González López</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">7,90K</td>
+                <td class="calc-buy">7,67K</td>
+                <td class="calc-sell">9,08K</td>
+                <td class="profit-loss">+0,96K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">91</div>
+                    <span class="player-name">Alexia Putellas Segura</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">35,00K</td>
+                <td class="calc-buy">33,98K</td>
+                <td class="calc-sell">37,45K</td>
+                <td class="profit-loss">+1,60K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Florian Wirtz</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">6,60K</td>
+                <td class="calc-buy">6,41K</td>
+                <td class="calc-sell">7,59K</td>
+                <td class="profit-loss">+0,80K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Vinícius José de Oliveira Júnior</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">18,00K</td>
+                <td class="calc-buy">17,48K</td>
+                <td class="calc-sell">19,80K</td>
+                <td class="profit-loss">+1,33K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Patricia Guijarro Gutiérrez</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">5,90K</td>
+                <td class="calc-buy">5,73K</td>
+                <td class="calc-sell">6,79K</td>
+                <td class="profit-loss">+0,72K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Achraf Hakimi</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">5,20K</td>
+                <td class="calc-buy">5,05K</td>
+                <td class="calc-sell">5,98K</td>
+                <td class="profit-loss">+0,63K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">90</div>
+                    <span class="player-name">Jude Bellingham</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">7,10K</td>
+                <td class="calc-buy">6,89K</td>
+                <td class="calc-sell">8,16K</td>
+                <td class="profit-loss">+0,86K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">90</div>
+                    <span class="player-name">Ousmane Dembélé</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">35,00K</td>
+                <td class="calc-buy">33,98K</td>
+                <td class="calc-sell">37,45K</td>
+                <td class="profit-loss">+1,60K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #1b4d3e 0%, #0b291e 100%); color: #a9dfbf; border: 1px solid #27ae60;">88</div>
+                    <span class="player-name">Jonathan Tah</span>
+                </td>
+                <td>Winter Wildcards</td>
+                <td class="price-val">24,25K</td>
+                <td class="calc-buy">23,54K</td>
+                <td class="calc-sell">26,68K</td>
+                <td class="profit-loss">+1,80K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">89</div>
+                    <span class="player-name">Federico Valverde</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">6,80K</td>
+                <td class="calc-buy">6,60K</td>
+                <td class="calc-sell">7,82K</td>
+                <td class="profit-loss">+0,83K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">90</div>
+                    <span class="player-name">Caroline Graham Hansen</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">11,00K</td>
+                <td class="calc-buy">10,68K</td>
+                <td class="calc-sell">12,65K</td>
+                <td class="profit-loss">+1,34K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">91</div>
+                    <span class="player-name">Mohamed Salah</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">28,50K</td>
+                <td class="calc-buy">27,67K</td>
+                <td class="calc-sell">31,35K</td>
+                <td class="profit-loss">+2,11K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">90</div>
+                    <span class="player-name">Erling Haaland</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">29,00K</td>
+                <td class="calc-buy">28,16K</td>
+                <td class="calc-sell">31,90K</td>
+                <td class="profit-loss">+2,15K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #1b4d3e 0%, #0b291e 100%); color: #a9dfbf; border: 1px solid #27ae60;">88</div>
+                    <span class="player-name">Claudia Pina Medina</span>
+                </td>
+                <td>Winter Wildcards</td>
+                <td class="price-val">61,50K</td>
+                <td class="calc-buy">59,71K</td>
+                <td class="calc-sell">64,58K</td>
+                <td class="profit-loss">+1,64K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #2c2c2c 0%, #111111 100%); color: #f1c40f; border: 1px solid #d4af37;">88</div>
+                    <span class="player-name">Mike Maignan</span>
+                </td>
+                <td>TOTW</td>
+                <td class="price-val">58,00K</td>
+                <td class="calc-buy">56,31K</td>
+                <td class="calc-sell">60,90K</td>
+                <td class="profit-loss">+1,54K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #00acc1 0%, #006064 100%); color: #e0f7fa; border: 1px solid #4dd0e1;">88</div>
+                    <span class="player-name">Pedro Lomba Neto</span>
+                </td>
+                <td>Thunderstruck</td>
+                <td class="price-val">92,00K</td>
+                <td class="calc-buy">89,32K</td>
+                <td class="calc-sell">96,60K</td>
+                <td class="profit-loss">+2,45K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #e8edf2 0%, #b0bec5 100%); color: #1a1a1a; border: 1px solid #ffffff;">90</div>
+                    <span class="player-name">Madeira Caeiro Figo</span>
+                </td>
+                <td>Icon</td>
+                <td class="price-val">36,00K</td>
+                <td class="calc-buy">34,95K</td>
+                <td class="calc-sell">38,52K</td>
+                <td class="profit-loss">+1,64K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #2c2c2c 0%, #111111 100%); color: #f1c40f; border: 1px solid #d4af37;">86</div>
+                    <span class="player-name">Álvaro Fernández Carreras</span>
+                </td>
+                <td>TOTW</td>
+                <td class="price-val">57,50K</td>
+                <td class="calc-buy">55,83K</td>
+                <td class="calc-sell">60,38K</td>
+                <td class="profit-loss">+1,53K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #e8edf2 0%, #b0bec5 100%); color: #1a1a1a; border: 1px solid #ffffff;">89</div>
+                    <span class="player-name">Beckham</span>
+                </td>
+                <td>Icon</td>
+                <td class="price-val">46,75K</td>
+                <td class="calc-buy">45,39K</td>
+                <td class="calc-sell">50,02K</td>
+                <td class="profit-loss">+2,13K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #00acc1 0%, #006064 100%); color: #e0f7fa; border: 1px solid #4dd0e1;">87</div>
+                    <span class="player-name">Jurriën Timber</span>
+                </td>
+                <td>Thunderstruck</td>
+                <td class="price-val">24,75K</td>
+                <td class="calc-buy">24,03K</td>
+                <td class="calc-sell">27,23K</td>
+                <td class="profit-loss">+1,83K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fce4ec; border: 1px solid #ec407a;">89</div>
+                    <span class="player-name">María Francesca Caldentey Oliver</span>
+                </td>
+                <td>Ultimate Scream</td>
+                <td class="price-val">11,25K</td>
+                <td class="calc-buy">10,92K</td>
+                <td class="calc-sell">12,94K</td>
+                <td class="profit-loss">+1,37K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #e8edf2 0%, #b0bec5 100%); color: #1a1a1a; border: 1px solid #ffffff;">91</div>
+                    <span class="player-name">Foudy</span>
+                </td>
+                <td>Icon</td>
+                <td class="price-val">26,75K</td>
+                <td class="calc-buy">25,97K</td>
+                <td class="calc-sell">29,43K</td>
+                <td class="profit-loss">+1,98K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #1b4d3e 0%, #0b291e 100%); color: #a9dfbf; border: 1px solid #27ae60;">89</div>
+                    <span class="player-name">Alexis Mac Allister</span>
+                </td>
+                <td>Winter Wildcards</td>
+                <td class="price-val">11,25K</td>
+                <td class="calc-buy">10,92K</td>
+                <td class="calc-sell">12,94K</td>
+                <td class="profit-loss">+1,37K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fce4ec; border: 1px solid #ec407a;">87</div>
+                    <span class="player-name">Ljungberg</span>
+                </td>
+                <td>Ultimate Scream</td>
+                <td class="price-val">23,75K</td>
+                <td class="calc-buy">23,06K</td>
+                <td class="calc-sell">26,13K</td>
+                <td class="profit-loss">+1,76K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); color: #1a1500; border: 1px solid #ffd700;">85</div>
+                    <span class="player-name">Trinity Rodman</span>
+                </td>
+                <td>Normal</td>
+                <td class="price-val">14,25K</td>
+                <td class="calc-buy">13,83K</td>
+                <td class="calc-sell">16,39K</td>
+                <td class="profit-loss">+1,73K</td>
+            </tr>
+            <tr>
+                <td class="player-cell">
+                    <div class="card-badge" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fce4ec; border: 1px solid #ec407a;">87</div>
+                    <span class="player-name">Antoine Griezmann</span>
+                </td>
+                <td>Ultimate Scream</td>
+                <td class="price-val">22,50K</td>
+                <td class="calc-buy">21,84K</td>
+                <td class="calc-sell">24,75K</td>
+                <td class="profit-loss">+1,67K</td>
+            </tr></tbody>
     </table>
 </div>
 </body>
